@@ -23,6 +23,13 @@ app.use(bodyParser.urlencoded({ extended: true }));app.use(bodyParser.text());
 // require(path.join(__dirname, './app/routing/htmlRoutes'))(app);
 require('./app/routing/htmlRoutes')(app);
 // Start listening on PORT
+
+
+
+
+//If the form was posted correctly page will show new frend without refresh 
+res.redirect("/");
+
 app.listen(PORT, function() {
     //we will know when the server started to run
   console.log('Friend Finder app is listening on PORT: ' + PORT);

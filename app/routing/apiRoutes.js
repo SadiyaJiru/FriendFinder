@@ -4,22 +4,48 @@
 //when they click on a link the page will know where to direct them
 const friendsData = require('../data/friends.js')
 
-// Pull in required dependencies
-// var path = require('path');
+//import friends data
+var friendsData = require ("../data/friends.js");
 
-// Export HTML routes
+// Export API routes
 module.exports = function(app) {
-	// console.log('___ENTER htmlRoutes.js___');
-
-    // Home page, root
-    //send a file using express
-    //if they are using the app direct them to home
-	// app.use(function(req, res) {
-	// 	res.sendFile(path.join(__dirname, '../public/home.html'));
-	// });
 
 	// Survey page
-	app.get('/api/survey', function(req, res) {
+	app.get('/api/friends', function(req, res) {
 res.json(friendsData)
 	});
 };
+app.post('/api/friends', function(req, res) {
+
+    var userInput = res.body;
+    var userResponse = userInput.scores;
+
+    //calculate the friendship match 
+const matchName = "";
+const matchImage = "";
+
+//initial value 
+const totalDiff = 100;
+
+//loop through all the friends 
+for (var i = 0; i < friendsData.length; i++){
+const diff = 0;
+for(var u = 0; u < userResponse.length; u++){
+    //returns absolute value 
+    diff += Math.abs(friendsData[i].scores[u]-userResponse[u]);
+}
+}
+	// If lowest difference, record the friend match
+    if (diff < totalDiff) {
+
+        totalDiff = diff;
+        matchName = friends[i].name;
+        matchImage = friends[i].photo;
+    }
+// Add new user
+friendsData.push(userInput);
+
+// Send appropriate response
+res.json({status: 'OK', matchName: matchName, matchImage: matchImage});
+
+})
