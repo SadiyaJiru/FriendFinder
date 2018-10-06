@@ -3,7 +3,7 @@
 //this page is to help direct the user whenever, 
 //when they click on a link the page will know where to direct them
 const friendsData = require('../data/friends.js')
-
+var path = require('path');
 //import friends data
 var friendsData = require ("../data/friends.js");
 
@@ -12,7 +12,7 @@ module.exports = function(app) {
 
 	// Survey page
 	app.get('/api/friends', function(req, res) {
-res.json(friendsData)
+res.json(friends)
 	});
 };
 app.post('/api/friends', function(req, res) {
