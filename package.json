@@ -1,7 +1,7 @@
 {
   "name": "FriendFinder",
   "version": "1.0.0",
-  "description": "### Overview",
+  "description": "Matches you with a friend",
   "main": "server.js",
   "dependencies": {
     "express": "^4.16.3",
