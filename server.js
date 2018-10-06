@@ -28,7 +28,7 @@ require('./app/routing/htmlRoutes')(app);
 
 
 //If the form was posted correctly page will show new frend without refresh 
-res.redirect("/");
+// res.redirect("/");
 
 app.listen(PORT, function() {
     //we will know when the server started to run
