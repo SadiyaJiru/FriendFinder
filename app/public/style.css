@@ -1,3 +1,6 @@
+* {
+  box-sizing: border-box;
+ }
 .myJumbo {
     margin-bottom: 0px;
     background-image: url(crowd.jpg);
@@ -15,18 +18,26 @@ body{
     border: double 8px white;
 
 }
+footer {
+  padding: 30px 0;
+  clear: both;
+  font-size: 20px;
+  color: #ccc;
+  text-align: center;
+  /* background: #666666; */
+  border-top: 8px solid brown;
+  height: 100px;
+  margin-left: 6%;
+  margin-right: 6%;
 
-/* .chosen-select{
-    allow_single_deselect: true
-  } */
+  bottom: 0;
+  position: absolute;
+}
+.gifContiner{
+  text-align: center;
 
-  /* ".chosen-select-no-single": {
-    disable_search_threshold: 10
-  },
-  ".chosen-select-no-results": {
-    no_results_text: "Oops, nothing found!"
-  },
-  ".chosen-select-width": {
-    width: "95%"
-  }
-}; */
+}
+.gif{
+  pointer-events: none;
+  padding: 3px;
+}
