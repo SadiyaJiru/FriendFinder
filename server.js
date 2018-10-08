@@ -8,13 +8,13 @@ var path = require('path');
 var app = express();
 
 
+
 // Configure the Express application
 //take whatever port is defined by Heroku or 8080 for local
 var PORT = process.env.PORT || 8080;
 // Add middleware for parsing incoming request bodies
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({extended: true}));
-app.use(bodyParser.json({ type: 'application/vnd.api+json' }));
 
 app.use(bodyParser.text());
 
