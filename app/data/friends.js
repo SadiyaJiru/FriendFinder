@@ -9,9 +9,6 @@ var friendsData = [{
     score: ['4', '2', '1', '5','4','4','1','3','2','2']
 }
 
-
-
 ];
-
 
 module.exports = friendsData;
