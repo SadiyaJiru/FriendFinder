@@ -9,12 +9,12 @@ module.exports = function(app) {
 	// console.log('___ENTER htmlRoutes.js___');
 
 	// Home page
-	app.get('/', function(req, res) {
-		res.sendFile(path.join(__dirname, '../public/home.html'));
+	app.get('/survey', function(req, res) {
+		res.sendFile(path.join(__dirname + '../public/survey.html'));
 	});
 
-	// Survey page
-	app.get('/survey', function(req, res) {
-		res.sendFile(path.join(__dirname, '../public/survey.html'));
-	});
+ //a USE route to home page
+ app.use(function (req, res) {
+    res.sendFile(path.join(__dirname + '/../public/home.html'));
+  });
 };

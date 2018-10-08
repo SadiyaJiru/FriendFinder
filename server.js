@@ -2,10 +2,11 @@
 //recieve our info back in jason form
 var bodyParser = require('body-parser');
 var express = require('express');
-//express makes routing easy using node js
-var app = express();
 //path is built in node
 var path = require('path');
+//express makes routing easy using node js
+var app = express();
+
 
 // Configure the Express application
 //take whatever port is defined by Heroku or 8080 for local

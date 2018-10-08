@@ -3,7 +3,7 @@ var path = require("path");
 
 //this page is to help direct the user whenever, 
 //when they click on a link the page will know where to direct them
-var friendsData  = require("../data/friends.js");
+var friendsData  = require('../data/friends.js');
 
 //import friends data
 
@@ -12,13 +12,13 @@ var totalDiff = 0;
 module.exports = function(app) {
 
 	// Survey page
-	app.get("/api/friends", function(req, res) {
+	app.get('/api/friends', function(req, res) {
 res.json(friendsData)
 	});
-app.post("/api/friends", function(req, res) {
+app.post('/api/friends', function(req, res) {
     var matchFound = {
-    name: "",
-    image: "",
+    name: '',
+    image: '',
     matchDifference: 1000
 };
     var userInputData = req.body;
@@ -46,9 +46,13 @@ for(var u = 0; u < 10; u++){
         matchFound.photo = friends[i].photo;
         matchFound.matchDifference = totalDiff;
     }
+
+    
+    var result = friendsData[matchFound];
+    res.json(bff);
 // Add new user
 friendsData.push(userInputData);
-res.json(matchFound);
+res.json(result);
 // Send appropriate response
 // res.json({status: 'OK', matchName: matchName, matchImage: matchImage});
 
