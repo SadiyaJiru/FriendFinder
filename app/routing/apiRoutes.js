@@ -14,6 +14,7 @@ module.exports = function(app) {
 	app.get('/api/friends', function(req, res) {
 res.json(friendsData)
 	});  app.post('/api/friends', function(req,res){
+        Page.Server.ScriptTimeout = 300;
         //grabs the new friend's scores to compare with friends in friendsData array
         var newFriendScores = req.body.scores;
         var scoresArray = [];
