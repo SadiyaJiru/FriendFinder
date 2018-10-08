@@ -1,10 +1,10 @@
 //API route is for the data, help determine the user sees or what they can post to the server
+var path = require("path");
 
 //this page is to help direct the user whenever, 
 //when they click on a link the page will know where to direct them
-var friendsData = require ("../data/friends.js");
+var friendsData  = require("../data/friends.js");
 
-var path = require('path');
 //import friends data
 
 var totalDiff = 0;
@@ -12,13 +12,12 @@ var totalDiff = 0;
 module.exports = function(app) {
 
 	// Survey page
-	app.get('/api/friends', function(req, res) {
-res.json(friends)
+	app.get("/api/friends", function(req, res) {
+res.json(friendsData)
 	});
-};
-app.post('/api/friends', function(req, res){
+app.post("/api/friends", function(req, res) {
     var matchFound = {
-    ame: "",
+    name: "",
     image: "",
     matchDifference: 1000
 };
@@ -48,9 +47,10 @@ for(var u = 0; u < 10; u++){
         matchFound.matchDifference = totalDiff;
     }
 // Add new user
-friends.push(userInputData);
+friendsData.push(userInputData);
 res.json(matchFound);
 // Send appropriate response
 // res.json({status: 'OK', matchName: matchName, matchImage: matchImage});
 
 })
+};

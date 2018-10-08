@@ -21,10 +21,10 @@ app.use(express.static(path.join(__dirname, './app/public')));
 
 
 // Add the application routes
-// require(path.join(__dirname, './app/routing/apiRoutes'))(app);
-// require(path.join(__dirname, './app/routing/htmlRoutes'))(app);
-require('./app/routing/apiRoutes.js')(app);
-require('./app/routing/htmlRoutes.js')(app);
+require(path.join(__dirname, './app/routing/apiRoutes'))(app);
+require(path.join(__dirname, './app/routing/htmlRoutes'))(app);
+// require('./app/routing/apiRoutes.js')(app);
+// require('./app/routing/htmlRoutes.js')(app);
 // Start listening on PORT
 
 
