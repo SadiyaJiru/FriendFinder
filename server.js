@@ -14,6 +14,8 @@ var PORT = process.env.PORT || 8080;
 // Add middleware for parsing incoming request bodies
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({extended: true}));
+app.use(bodyParser.json({ type: 'application/vnd.api+json' }));
+
 app.use(bodyParser.text());
 
 // Expose the public directory to access CSS files
