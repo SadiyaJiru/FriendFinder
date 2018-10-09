@@ -272,7 +272,8 @@
        console.log('data:',userData)
 
         	// Grab the URL of the website
-	    	var currentURL = window.location.origin;
+        var currentURL = window.location.origin;
+        (function($) {
 	    	// AJAX post the data to the friends API.
 	    	$.post(currentURL + "/api/friends", userData).done(function(data){
           console.log('data:',data)
@@ -286,6 +287,7 @@
           $("#results-modal").modal("toggle");
 
         });
+      })(jQuery);
       } else {
         alert("Please fill out all fields before submitting!");
       }
