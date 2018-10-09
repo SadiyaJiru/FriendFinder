@@ -5,8 +5,9 @@
   "main": "server.js",
   "dependencies": {
     "express": "^4.16.3",
+    "require": "^2.4.20",
     "requirer": "^0.0.4",
-    "require": "^2.4.20"
+    "uglify-js": "^3.4.9"
   },
   "devDependencies": {},
   "scripts": {
