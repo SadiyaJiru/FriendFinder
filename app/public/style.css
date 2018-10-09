@@ -15,12 +15,13 @@ h1{
 font-size: 100px;
 font-family: 'Bree Serif', serif;
 }
-h2{
-  font-size: 70px;
-font-family: 'Bree Serif', serif;
-}
-.h5{
+
+h5{
   color: black;
+  font-size: 70px;
+  font-family: 'Bree Serif', serif;
+
+
 }
 .surveyContainer{
   width: 50%;
