@@ -16,7 +16,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/SadiyaJiru/FriendFinder.git"
+    "url": "git+https://github.com/SadiyaJiru/findAMatch/.git"
   },
   "keywords": [
     "findMatch"
@@ -24,7 +24,7 @@
   "author": "Sadiya Jiru",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/SadiyaJiru/FriendFinder/issues"
+    "url": "https://github.com/SadiyaJiru/findAMatch/issues"
   },
-  "homepage": "https://github.com/SadiyaJiru/FriendFinder#readme"
+  "homepage": "https://github.com/SadiyaJiru/findAMatch/"
 }

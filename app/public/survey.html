@@ -267,14 +267,16 @@
           ]
         };
         	    	//the URL of the website
-	    //  var currentURL = window.location.origin;
+	     var currentURL = window.location.origin;
       //  $.ajaxSetup({ headers: { 'csrftoken' : '{{ csrf_token() }}' } });
        console.log('data:',userData)
 
    	// Grab the URL of the website
         // AJAX post the data to the friends API.
-        $.ajax({ url: "/api/friends", method: "POST" }).then(function() {
+        
+	    	$.post(currentURL + "/api/friends", userData).done(function(data){
           console.log('data:',data)
+
 
           // Grab the result from the AJAX post..
           // so that the best match's name and photo are displayed on the results modle.
