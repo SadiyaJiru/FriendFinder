@@ -276,16 +276,14 @@
       //  $.ajaxSetup({ headers: { 'csrftoken' : '{{ csrf_token() }}' } });
        console.log('data:',userData)
 
-   	// Grab the URL of the website
-        // AJAX post the data to the friends API.
-        
+
 	    	$.post(currentURL + "/api/friends", userData).done(function(data){
           console.log('data:',data)
 
 
           // Grab the result from the AJAX post..
           // so that the best match's name and photo are displayed on the results modle.
-          $("#match-name").text(data.name);
+          $("#match-name").text(userData.name);
           $("#match-img").attr("src", data.photo);
 
           // Show the modal with the best match
