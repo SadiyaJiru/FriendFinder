@@ -3,6 +3,8 @@
 
 <head>
   <meta charset="UTF-8">
+  <meta name="_token" content="{{ csrf_token() }}">
+
   <title>FriendFinder</title>
   <!-- Latest compiled and minified CSS & JS -->
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
@@ -265,6 +267,7 @@
         };
         	    	//the URL of the website
 	     var currentURL = window.location.origin;
+       $.ajaxSetup({ headers: { 'csrftoken' : '{{ csrf_token() }}' } });
 
         // AJAX post the data to the friends API.
         $.post(currentURL +"./api/friends", userData).done(function(data) {
