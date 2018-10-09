@@ -7,6 +7,13 @@ Friend Finder is an application which mimics a dating app. This full-stack app t
 ### Friend Finder is deployed to Heroku
 try it here http://findamatch.herokuapp.com.
 
+### Technologies used
+Node.js
+body-parager NPM Package - https://www.npmjs.com/package/inquirer
+express NPM Package - https://www.npmjs.com/package/express
+path NPM Package - https://www.npmjs.com/package/path
+
+
 ## Home Page
 <img width="591" alt="readme1" src="https://user-images.githubusercontent.com/39322545/46701716-45df9f80-cbe6-11e8-8220-ee9c86bb4ffa.png">
 
