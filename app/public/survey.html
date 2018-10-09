@@ -248,7 +248,7 @@
       }
 
       // If all required fields are filled create an object holding user data
-      if (validateForm()) {
+      if (validateForm()===true) {
         //userData will hold the user data for each user that enters info
         var userData = {
           name: $("#name").val(),
