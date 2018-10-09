@@ -269,9 +269,12 @@
         	    	//the URL of the website
 	    //  var currentURL = window.location.origin;
        $.ajaxSetup({ headers: { 'csrftoken' : '{{ csrf_token() }}' } });
+       console.log('data:',userData)
 
-        // AJAX post the data to the friends API.
-        $.post("/api/friends", userData).done(function(data) {
+        	// Grab the URL of the website
+	    	var currentURL = window.location.origin;
+	    	// AJAX post the data to the friends API.
+	    	$.post(currentURL + "/api/friends", userData).done(function(data){
           console.log('data:',data)
 
           // Grab the result from the AJAX post..
