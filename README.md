@@ -22,3 +22,7 @@ try it here http://findamatch.herokuapp.com.
 
 ## Result Page
 <img width="676" alt="readme3" src="https://user-images.githubusercontent.com/39322545/46701719-46783600-cbe6-11e8-98b5-bbad46b3edc2.png">
+
+# Author(s)
+Sadiya Jiru -[GitHub Profile](https://github.com/SadiyaJiru)
+Last updated 10/09/2018
