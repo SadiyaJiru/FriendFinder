@@ -282,7 +282,7 @@
 
           // Grab the result from the AJAX post..
           // so that the best match's name and photo are displayed on the results modle.
-          $("#match-name").text(data.name);
+          $("#match-name").html(data.userName);
           $("#match-img").attr("src", data.photo);
 
           // Show the modal with the best match
