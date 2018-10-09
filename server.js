@@ -1,8 +1,10 @@
-const express = require('express');
-const path = require('path');
+var express = require('express');
 var bodyParser = require('body-parser');
-const PORT = process.env.PORT || 8080;
+var path = require('path');
+
 const app = express();
+
+const PORT = process.env.PORT || 8080;
 app.use(express.urlencoded({ extended: true }));
 app.use(bodyParser.text());
 app.use(express.json());
