@@ -25,6 +25,6 @@ Friend Finder is an application which mimics a dating app. This full-stack app t
 <img width="676" alt="readme3" src="https://user-images.githubusercontent.com/39322545/46701719-46783600-cbe6-11e8-98b5-bbad46b3edc2.png">
 
 # Author(s)
-Sadiya Jiru -[GitHub Profile](https://github.com/SadiyaJiru) 
+Sadiya Jiru -[GitHub Profile](https://github.com/SadiyaJiru)<br />
 Last updated 10/09/2018
 
