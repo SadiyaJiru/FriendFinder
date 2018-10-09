@@ -202,7 +202,6 @@
   </div>
 <!-- send the above form data to the server-->
     <script type="text/javascript">
-     $(document).ready(function () {
 
    // Chosen CSS
     var config = {
@@ -254,8 +253,8 @@
 
       // If all required fields are filled create an object holding user data
       if (validateForm()===true) {
-        //userData will hold the user data for each user that enters info
-        var userData = {
+        // will hold the user data for each user that enters info
+        var userInfo = {
           name: $("#name").val(),
           photo: $("#photo").val(),
           scores: [
@@ -274,16 +273,16 @@
         	    	//the URL of the website
 	     var currentURL = window.location.origin;
       //  $.ajaxSetup({ headers: { 'csrftoken' : '{{ csrf_token() }}' } });
-       console.log('data:',userData)
+       console.log('data:',userInfo)
 
 
-	    	$.post(currentURL + "/api/friends", userData).done(function(data){
+        $.post(currentURL + "/api/friends", userInfo).done(function(data){
           console.log('data:',data)
 
 
           // Grab the result from the AJAX post..
           // so that the best match's name and photo are displayed on the results modle.
-          $("#match-name").text(userData.name);
+          $("#match-name").text(data.name);
           $("#match-img").attr("src", data.photo);
 
           // Show the modal with the best match
@@ -296,7 +295,7 @@
       }
     });
     
-  })
+
   </script>
 
 </body>
