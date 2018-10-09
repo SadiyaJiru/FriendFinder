@@ -1,59 +1,3 @@
-// // Pull in required dependencies
-// var path = require("path");
-// var bodyParser = require('body-parser');
-
-
-// // Import the list of friend entries
-// var friends = require("../data/friends.js");
-
-// // Export API routes
-// module.exports = function(app) {
-//   // console.log('___ENTER apiRoutes.js___');
-
-//   // Total list of friend entries
-//   app.get("/api/friends", function(req, res) {
-//     res.json(friends);
-//   });
-
-//   // Add new friend entry
-//   app.post("/api/friends", function(req, res) {
-  
-//     // Compute best friend match
-//     var matchName = "";
-//     var matchPhoto = "";
-//     var difference = 40;
-
-//     friends.forEach(function(frnd) {
-//       var matchedScoresArray = [];
-//       var totalDifference = 40;
-//        function add(total, num) {
-//         return total + num;
-//        }
-//        for (var i = 0; i < frnd.scores.length; i++) {
-//         matchedScoresArray.push(Math.abs(parseInt(req.body.scores[i]) - parseInt(frnd.scores[i])));
-
-//     }
-//     totalDifference = matchedScoresArray.reduce(add, 0);
-//  // If the above value is smaller than the previous difference...
-//  if (totalDifference < difference) {
-//   // Set it as the previous difference...
-//   difference = totalDifference;
-//   // And set these variables to the appropriate friend match
-//   matchName = frnd.name;
-//   matchPhoto = frnd.photo;
-// }
-// });
-// // Once the cycle is complete, the match with the least difference will remain,
-// // and that data will be sent as a json object back to the client
-// res.json({
-// name: matchName,
-// photo: matchPhoto
-// });
-
-// // This adds the new users sent data object to friends.js
-// friends.push(req.body);
-// });
-// }
 
 var friends = require('../data/friends.js');
 
@@ -65,7 +9,8 @@ module.exports = function(app) {
         res.json(friends);
     });
 
-    // Set the post for the api/friends route
+    // This will be used to handle incoming survey results.
+    //This route will also be used to handle the compatibility logic.
     app.post('/api/friends', function(req, res) {
     		// Set variables only needed for the post
         var difference = 40;
