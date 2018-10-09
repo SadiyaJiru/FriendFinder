@@ -4,7 +4,7 @@ var friends = [{
     scores: ['1', '5', '4', '1','4','4','2','3','3','2']
 },
 {
-    name: "Beyonce Knowls",
+    name: "Beyonce Knowles",
     photo: "https://peopledotcom.files.wordpress.com/2017/10/beyonce-selena-gallery.jpeg",
     scores: ['4', '2', '1', '5','4','4','1','3','2','2']
 },
@@ -33,7 +33,7 @@ var friends = [{
     photo: "https://www.telegraph.co.uk/content/dam/beauty/2016/04/27/Jennifer-Aniston_trans_NvBQzQNjv4BqkX3onuOCNa0uuigJZQxtEBOJpD29tp1fMw9A0Cp6c54.jpg?imwidth=450",
     scores: ['5', '5', '3', '5','4','1','3','1','5','5']
  },
- 
+
 ];
 
 module.exports = friends;

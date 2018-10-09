@@ -185,9 +185,10 @@
           <h2 id="match-name">Name</h2>
         </div>
         <div class="modal-body">
-          <!--Displays name of matched user-->
-          
           <img id="match-img" src="" alt="No Image" width = 250px>
+        </div>
+        <div class="modal-body">
+          <img id="user-img" src="" alt="No Image" width = 250px>
         </div>
         <div class="modal-footer">
             <a class="btn btn-warning" href="home.html" role="button">Close</a>
@@ -282,6 +283,8 @@
           $("#match-name").text(data.name);
           $("#match-img").attr("src", data.photo);
 
+
+$("#user-img").attr("src", userInfo.photo )
           // Show the modal with the best match
           $("#results-modal").modal("toggle");
 
