@@ -61,4 +61,11 @@ module.exports = function(app) {
         // This adds the new users sent data object to friends.js
         friends.push(req.body);
     });
-}
+    app.post("/api/clear", function(req, res) {
+        // Empty out the arrays of data
+        friends.length = [];
+    
+        res.json({ ok: true });
+      });
+    };
+    
