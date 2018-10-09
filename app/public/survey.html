@@ -271,18 +271,18 @@
           ]
         };
         	    	//the URL of the website
-	     var currentURL = window.location.origin;
+	    //  var currentURL = window.location.origin;
       //  $.ajaxSetup({ headers: { 'csrftoken' : '{{ csrf_token() }}' } });
        console.log('data:',userInfo)
 
 
-        $.post(currentURL + "/api/friends", userInfo).done(function(data){
+        $.post( "/api/friends", userInfo).done(function(data){
           console.log('data:',data)
 
 
           // Grab the result from the AJAX post..
           // so that the best match's name and photo are displayed on the results modle.
-          $("#match-name").html(data.userName);
+          $("#match-name").html(data.data);
           $("#match-img").attr("src", data.photo);
 
           // Show the modal with the best match
