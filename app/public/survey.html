@@ -272,9 +272,8 @@
        console.log('data:',userData)
 
    	// Grab the URL of the website
-        var currentURL = window.location.origin;
 	    	// AJAX post the data to the friends API.
-	    	$.post(currentURL + "/api/friends", userData).done(function(data){
+	    	$.post("/api/friends", userData).done(function(data){
           console.log('data:',data)
 
           // Grab the result from the AJAX post..
