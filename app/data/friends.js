@@ -33,6 +33,7 @@ var friends = [{
     photo: "https://www.telegraph.co.uk/content/dam/beauty/2016/04/27/Jennifer-Aniston_trans_NvBQzQNjv4BqkX3onuOCNa0uuigJZQxtEBOJpD29tp1fMw9A0Cp6c54.jpg?imwidth=450",
     scores: ['5', '5', '3', '5','4','1','3','1','5','5']
  },
+ 
 ];
 
 module.exports = friends;
