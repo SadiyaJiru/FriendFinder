@@ -182,7 +182,7 @@
         <div class="modal-header">
           <button type="button" class="close" data-dismiss="modal">&times;</button>
           <h2 class="modal-title"><strong>Best Match</strong></h2><hr>
-          <h2 id="match-name"></h2>
+          <h2 id="match-name">Name</h2>
         </div>
         <div class="modal-body">
           <!--Displays name of matched user-->
@@ -252,8 +252,8 @@
       if (validateForm()===true) {
         // will hold the user data for each user that enters info
         var userInfo = {
-          name: $("#name").val(),
-          photo: $("#photo").val(),
+          name: $("#name").val().trim(),
+          photo: $("#photo").val().trim(),
           scores: [
             $("#q1").val(),
             $("#q2").val(),
@@ -279,7 +279,7 @@
 
           // Grab the result from the AJAX post..
           // so that the best match's name and photo are displayed on the results modle.
-          $("#match-name").text(data.data);
+          $("#match-name").text(data.name);
           $("#match-img").attr("src", data.photo);
 
           // Show the modal with the best match
