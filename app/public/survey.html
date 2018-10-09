@@ -268,12 +268,12 @@
           ]
         };
         	    	//the URL of the website
-	    //  var currentURL = window.location.origin;
+	     var currentURL = window.location.origin;
       //  $.ajaxSetup({ headers: { 'csrftoken' : '{{ csrf_token() }}' } });
        console.log('data:',userInfo)
 
 
-        $.post( "/api/friends", userInfo).done(function(data){
+        $.post(currentURL + "/api/friends", userInfo).done(function(data){
           console.log('data:',data)
 
 
