@@ -5,7 +5,8 @@
 Friend Finder is an application which mimics a dating app. This full-stack app takes in a users result from a personality survey. The survey contains ten questions with values from 1 (Strongly Disagree) to 5 (Strongly Agree). The App compares the users result to an existing persons stored answers. After clicking submit the user will get matched with a friend. It uses Express to handle routing
 
 ### Friend Finder is deployed to Heroku
-try it here http://findamatch.herokuapp.com.
+[Check It Out](http://findamatch.herokuapp.comu)
+
 
 ### Technologies used
 * Node.js
@@ -24,5 +25,5 @@ try it here http://findamatch.herokuapp.com.
 <img width="676" alt="readme3" src="https://user-images.githubusercontent.com/39322545/46701719-46783600-cbe6-11e8-98b5-bbad46b3edc2.png">
 
 # Author(s)
-Sadiya Jiru -[GitHub Profile](https://github.com/SadiyaJiru)
+Sadiya Jiru -[GitHub Profile](https://github.com/SadiyaJiru) 
 Last updated 10/09/2018
