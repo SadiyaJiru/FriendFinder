@@ -1,6 +1,6 @@
 var friendsData = [{
-    name: "Leonardo Dicaprio",
-    photo: "https://www.google.com/url?sa=i&rct=j&q=&esrc=s&source=images&cd=&cad=rja&uact=8&ved=2ahUKEwiSkfz1ju7dAhUFnawKHcbpACQQjRx6BAgBEAU&url=https%3A%2F%2Fwww.facebook.com%2FLeonardoDiCaprio%2F&psig=AOvVaw1eo5-SzX-qgm9NDBBah3T_&ust=1538788204596502",
+    name: "Selena Gomez",
+    photo: "https://upload.wikimedia.org/wikipedia/commons/thumb/8/85/Selena_Gomez_-_Walmart_Soundcheck_Concert.jpg/492px-Selena_Gomez_-_Walmart_Soundcheck_Concert.jpg",
     score: ['1', '5', '4', '1','4','4','2','3','3','2']
 },
 {
