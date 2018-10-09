@@ -26,7 +26,6 @@
 <body>
 
   <div class="container surveyContainer">
-
     <div class = "userInfo">
     <!-- <div class="jumbotron myJumbo"> -->
     <h2>Survey Questions</h2>
@@ -41,6 +40,7 @@
   <!-- </div> -->
 <div id = "questionsContainer">
     <h3><strong>Question 1</strong></h3>
+    
     <h4>Being able to develop a plan and stick to it is the most important part of every project.</h4>
     <select class="select" id="q1">
       <option value=""></option>
@@ -174,18 +174,18 @@
   </div>
 
   <!-- Modal -->
-  <div id="results-modal" class="modal fade" role="dialog">
+  <div id="results-modal" class="modal fade" role="dialog" style="background-color:gray;">
     <div class="modal-dialog">
 
       <!-- Modal content-->
       <div class="modal-content">
         <div class="modal-header">
           <button type="button" class="close" data-dismiss="modal">&times;</button>
-          <h5 class="modal-title"><strong>Best Match</strong></h5>
+          <h2 class="modal-title"><strong>Best Match</strong></h2>
         </div>
         <div class="modal-body">
           <!--Displays name of matched user-->
-          <h5 id="match-name"></h5>
+          <h2 id="match-name"></h2>
           <img id="match-img" src="" alt="No Image" width = 250px>
         </div>
         <div class="modal-footer">
