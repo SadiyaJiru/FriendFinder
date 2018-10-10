@@ -4,17 +4,18 @@
 }
 
 body{
-  /* background-image: radial-gradient(circle, rgba(255,0,1,1), rgba(255,0,0,0)); */
-  /* background-image: radial-gradient(circle, red, yellow, green); */
-     /* background-image: url(friends.jpg); 
-     background-repeat: no-repeat; */
-     background-image: radial-gradient(circle, black, gray, orange);
-color: white;
+  background: #e1eec3;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to top, #f05053, #e1eec3);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #f05053, #e1eec3); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  
+     color: white;
 }
 h1{
 font-size: 100px;
 font-family: 'Bree Serif', serif;
+color: lightyellow;
 }
+
 h2{
 color: black;
 }
@@ -41,6 +42,35 @@ footer {
   position: absolute;
 
 }
+/* CSS talk bubble */
+.talk-bubble {
+  padding: 2% 1%;
+	margin: 40px;
+  display: inline-block;
+  position: relative;
+	width: 200px;
+  height: auto;
+  color: black;
+	background-color: lightyellow;
+}
+.tri-right.btm-left:after{
+	content: ' ';
+	position: absolute;
+	width: 0;
+	height: 0;
+	left: 0px;
+  right: auto;
+  top: auto;
+	bottom: -20px;
+	border: 22px solid;
+	border-color: transparent transparent transparent lightyellow;
+}
+/*This had to be used to center allign the bubble */
+.thisBubble{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
 .gifContiner{
   text-align: center;
   font-family: 'Bree Serif', serif;
@@ -51,7 +81,10 @@ footer {
   pointer-events: none;
   padding: 3px;
 }
-
+.heart{
+  font-size: 30px;
+  color: red;
+}
 @media only screen and (max-width: 480px) {
   #masthead {
     /* Positioning */
